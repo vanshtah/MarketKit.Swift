@@ -14,6 +14,7 @@ public enum BlockchainType {
     case arbitrumOne
     case gnosis
     case fantom
+    case shardeum
     case tron
     case solana
     case unsupported(uid: String)
@@ -35,6 +36,7 @@ public enum BlockchainType {
         case "arbitrum-one": self = .arbitrumOne
         case "gnosis": self = .gnosis
         case "fantom": self = .fantom
+        case "shardeum" : self = .shardeum
         case "tron": self = .tron
         case "solana": self = .solana
         default: self = .unsupported(uid: uid)
@@ -58,6 +60,7 @@ public enum BlockchainType {
         case .arbitrumOne: return "arbitrum-one"
         case .gnosis: return "gnosis"
         case .fantom: return "fantom"
+        case .shardeum: return "shardeum"
         case .tron: return "tron"
         case .solana: return "solana"
         case .unsupported(let uid): return uid
